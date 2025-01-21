@@ -1,6 +1,5 @@
-                                  LITERATURE REVIEW - AJAY MASADI
-
-Summary and Analysis:
+                                  LITERATURE REVIEW 
+                     Loan Approval Prediction By Machine Learning
 
 Background/Motivation:
 
