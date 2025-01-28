@@ -1,3 +1,5 @@
+Smart Credit Card Approval Prediction System using Machine Learning
+
 Background/Motivation:
 
 An essential procedure for financial companies, the study looks into the automation of credit card application evaluations.The difficulty for credit card 
