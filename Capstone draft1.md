@@ -21,15 +21,17 @@
 
                                                                              
 
-INTRODUCTION
-Problem Definition:
+  INTRODUCTION
+  
+  Problem Definition:
 Digital financial systems encounter online payment fraud as their principal operational challenge. Electronic payment systems exploded in popularity due to their rising 
 adoption rates but this created growing criminal activities that generate major financial losses between customers and businesses. Fraudulent transaction identification 
 remains challenging since it requires assessing massive data sets to protect accurate users from improper classification. Current mathematical data science problems need 
 classification methods to classify payments between fraudulent and legitimate categories using past transaction data. Machine learning models need to improve their 
 capabilities incrementally in response to fraud method transformations because traditional rule-based systems have shown their ineffectiveness.
 
-Context and Background:
+   Context and Background:
+
 Online payment fraud detection research operates within three scientific domains consisting of statistics and machine learning and data science. Statistical modeling 
 systems built from logistic regression and anomaly detection establish normal payment patterns through which they detect deviations from normal behavior. Current fraud
 detection systems implement both supervised and unsupervised machine learning algorithms to provide their core processing capabilities which use decision trees and random
@@ -41,7 +43,8 @@ Hassan (2020) focused on support vector machines for credit card fraud detection
 of weak classifiers into unified predictive models through ensemble methods such as AdaBoost, XGBoost and random forests grants predictive modeling its robust 
 characteristics.
 
-Objectives and Goals:
+   Objectives and Goals:
+
 The research develops a highly efficient machine learning method to detect online payment fraud through the implementation of advanced classification processes 
 and data cleaning methods. The research sets four specific objectives which are:
 The model needs to determine essential characteristics which drive fraudulent pay-to-pay frauds.
@@ -49,7 +52,9 @@ An investigation will occur concerning different machine learning models which d
 A solution for class imbalance problems will be achieved by applying resampling techniques combined with cost-sensitive learning approaches.
 The researchers need to improve model performance while reducing false positives as well as false negatives and optimizing the F1-score and recall and precision scores.
 The solution implements scalability features to connect directly with active fraud detection systems running in real-time.
-Summary of approach:
+
+    Summary of approach:
+
 Multiple stages make up the proposed methodology which starts with collecting data then processing it before moving onto feature engineering for model training. Prior 
 to model input the dataset needs cleansing and normalization and data transformation to achieve optimal evaluation conditions for machine learning models. A performance
 evaluation of the supervised learning methods logistic regression, decision trees, random forests, AdaBoost and neural networks will occur based on accuracy and precision
@@ -58,8 +63,10 @@ class imbalance. The final step includes executing hyperparameter tuning and mod
 investigation seeks to enhance the security and reliability of online payment systems through state-of-the-art machine learning methodology assessment and optimization
 in the field of fraud detection.
 
-METHODS
-Data Acquisition and Sources
+    METHODS
+
+    Data Acquisition and Sources
+
 The dataset used in this project is obtained from kaggle source containing detailed records of online payment transactions. A record database arranges financial
 transaction data with various elements that involve transaction types alongside sender and receiver account balances and fraud labels. Real transaction patterns 
 within this dataset make it appropriate for developing models to detect fraudulent activities.
@@ -82,7 +89,8 @@ oldbalanceDest	Balance of the account of receiver before transaction
 newbalanceDest	Balance of the account of receiver after transaction
 isFraud	The value to be predicted i.e. 0 or 1
 
-Mathematical or Statistical Models
+      Mathematical or Statistical Models
+
 Multiple machine learning algorithms get deployed for building an effective fraud detection system while undergoing assessment. The initial algorithm choice used 
 Logistic Regression to establish a baseline classification method and calculate the weight of individual variables in fraud prediction. Random Forest receives selection
 as an ensemble-based model because it demonstrates two essential features: non-linear capability and detection of intricate transaction patterns. The machine learning 
@@ -91,7 +99,8 @@ with Artificial Neural Networks are investigated for detecting fraud because the
 The selected models fit best for classification purposes because fraud identification demands precise detection and high recall performance. This situation calls for 
 models that focus on learning from rare instances of the minority class while avoiding prejudice toward dominant groups.
 
-Experimental Design or Analytical Procedures
+      Experimental Design or Analytical Procedures
+      
 A machine learning pipeline requires structured development process to create fraud detection models of high accuracy and reliability. To commence the analysis the 
 available dataset receives partitioning into three components consisting of training data (70%), validation (15%) and test (15%). Models receive the training set content
 for fitting purposes yet they refine their performance parameters through validation set execution. The test set functions as the final evaluation method to measure model
@@ -110,6 +119,7 @@ fraudulent transactions from non-fraudulent transactions the AUC-ROC Curve is an
 
 
 Software and Tools
+
 This project uses Python as its implementation framework since it offers comprehensive libraries for data manipulation and machine learning applications and model 
 assessment. The model development process relies on algorithms offered by pandas and NumPy for data manipulation while using scikit-learn for machine learning tasks 
 together with Matplotlib and Seaborn for data representation purposes. The process uses sophisticated XGBoost and TensorFlow/Keras machine learning models for improved 
@@ -118,6 +128,7 @@ resampling techniques. The computational resources are either local machines or 
 with extensive datasets.
 
 Ethical Considerations
+
 Ethical requirements about ensuring data privacy and fairness must receive attention because financial transactions form part of fraud detection operations. 
 The database used for this research contains no personal information so the data remains anonymous. The deployment of the model needs attention because fraudulent 
 transactions might disproportionately impact specific user groups during the process. AI techniques that focus on fairness work to prevent any user group from facing
@@ -133,8 +144,10 @@ The model functions practically in real-life implementation because it operates 
 
 
 
-RESULTS
+   RESULTS
+
 1. Presentation of Data
+   
 The dataset consists of 30,019 transactions, each with 10 features such as transaction type, amount, origin and destination balances, and fraud labels. 
 Below is a summary of the dataset:
 •	Total Transactions: 30,019
@@ -148,11 +161,15 @@ The class distribution reveals a significant imbalance, with only 0.28% of trans
 as they may bias towards predicting legitimate transactions. We can see in below fig1
  
                                  Fig1: fraud vs non fraud transactions
+
 Missing Values Check
+
 A missing values check confirms that there are no missing values in the dataset, ensuring that no additional data imputation is required:
  
 
+
 2. Interpretation of Results
+   
 Model Performance Metrics
 Two machine learning models were trained and evaluated:
 1.	Random Forest Classifier
@@ -176,7 +193,9 @@ iii)  AUC-ROC Score
 •	Since 0.50 AUC-ROC represents random guessing, AdaBoost's 0.55 AUC-ROC is only slightly better than random, indicating poor performance.
  
                                               Fig2: Model performance comparision
+
 3. Comparison with Expected Outcomes
+   
 The expectation was that ensemble learning models (Random Forest and AdaBoost) would improve fraud detection. The results confirmed that Random Forest is superior 
 for this dataset, with significantly better recall and AUC-ROC.
 Unexpected findings:
@@ -184,7 +203,7 @@ Unexpected findings:
 only 84 fraud cases out of 30,019, it struggled to generalize.
 •	High accuracy does not indicate good fraud detection, since a model could achieve 99.72% accuracy by predicting all transactions as legitimate. Thus, recall and 
 AUC-ROC are the key evaluation metrics.
-4. Confusion Matrix Analysis
+5. Confusion Matrix Analysis
 The confusion matrices below provide insights into how each model classified fraudulent and legitimate transactions.
 Random Forest Confusion Matrix
 Actual / Predicted	Predicted Legitimate (0)	Predicted Fraud (1)
@@ -209,13 +228,15 @@ Key Insights from Confusion Matrices
 
 
 5. Statistical Significance
+   
 Due to the extremely imbalanced dataset, fraud cases were much rarer than legitimate transactions. This imbalance affected model performance, leading to:
 •	Low recall for both models, meaning several fraudulent transactions went undetected.
 •	High precision, meaning most flagged fraud cases were correct.
 •	AUC-ROC scores (0.76 for Random Forest and 0.55 for AdaBoost) confirming that Random Forest is statistically more reliable.
 A statistical significance test (e.g., McNemar’s test) could further confirm whether Random Forest is significantly better than AdaBoost.
 
-6. Limitations of the Results
+7. Limitations of the Results
+   
 While the models performed well, certain limitations must be acknowledged:
 i)Class Imbalance Issue
 •	Fraud cases accounted for only 0.28% of the dataset.
@@ -233,6 +254,7 @@ i)Class Imbalance Issue
 
 
 Discussion
+
 The research study presents important findings about machine learning algorithm applications for identifying online payment system fraud through experimental data analysis.
 The high overall accuracy of 99% achieved by Random Forest and AdaBoost classifiers does not indicate a reliable fraud detection model because analysis proves accuracy
 should not be used as the sole measurement metric with imbalanced datasets. Most fraud detection systems face a crucial operational limitation due to extreme class 
@@ -255,7 +277,9 @@ Research concludes that fraud detection systems require new evaluation methods w
 According to evaluation measures Random Forest demonstrates enhanced performance than AdaBoost which makes it more suitable for practical use. The development 
 of a fully robust fraud detection system requires comprehensive advancement of feature engineering along with threshold tuning capabilities and data diversity 
 implementations.
+
 Future Study
+
 Research in the field of online payment fraud detection can benefit from the current findings and constraints through multiple research avenues to enhance model
 performance. The solution to class imbalance presents itself as the primary research priority. Research into online payment fraud detection should investigate adaptive
 synthetic sampling (ADASYN) and ensemble-based resampling together with hybrid methods that unite oversampling with cost-sensitive learning as more advanced alternatives 
@@ -279,7 +303,9 @@ privacy protocols for accessing authentic transaction data which would produce g
 Future research needs to focus on four main areas involving data diversity improvement and class imbalance solutions alongside the implementation of sequential 
 models as well as interpretability methods alongside real-time detection capabilities. These proposed directions serve to strengthen the academic quality and 
 advance the practical deployment potential of the solution in financial institutions.
+
 References
+
 •	Yeh, I. C., & Lien, C. H. (2009). The comparisons of data mining techniques for the predictive accuracy of probability of default of credit card clients. 
 Expert Systems with Applications, 36(2), 2473–2480. https://doi.org/10.1016/j.eswa.2007.12.020
 •	Haque, F. M. A., & Hassan, M. M. (2020). Bank loan prediction using machine learning techniques. International Journal of Scientific Research in Computer Science,
