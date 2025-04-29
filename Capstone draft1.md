@@ -1,8 +1,10 @@
-UNIVERSITY OF WEST FLORIDA
+           UNIVERSITY OF WEST FLORIDA
 
-CAPSTONE PROJECT
-IDC6940
-AJAY MASADI
+                 CAPSTONE PROJECT
+
+                     IDC6940
+
+                   AJAY MASADI
 
 
 
