@@ -1,12 +1,12 @@
-           UNIVERSITY OF WEST FLORIDA
+                                                      UNIVERSITY OF WEST FLORIDA
 
-                 CAPSTONE PROJECT
+                                                           CAPSTONE PROJECT
 
-                     IDC6940
+                                                               IDC6940
 
-                   AJAY MASADI
+                                                             AJAY MASADI
 
-    TITLE:ONLINE PAYMENT FRAUD DETECTION USING MACHINE LEARNING
+                                      TITLE:ONLINE PAYMENT FRAUD DETECTION USING MACHINE LEARNING
 
 
 
@@ -21,9 +21,23 @@
 
                                                                              
 
-  INTRODUCTION
+                
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+        INTRODUCTION
   
   Problem Definition:
+  
 Digital financial systems encounter online payment fraud as their principal operational challenge. Electronic payment systems exploded in popularity due to their rising 
 adoption rates but this created growing criminal activities that generate major financial losses between customers and businesses. Fraudulent transaction identification 
 remains challenging since it requires assessing massive data sets to protect accurate users from improper classification. Current mathematical data science problems need 
@@ -53,7 +67,7 @@ A solution for class imbalance problems will be achieved by applying resampling 
 The researchers need to improve model performance while reducing false positives as well as false negatives and optimizing the F1-score and recall and precision scores.
 The solution implements scalability features to connect directly with active fraud detection systems running in real-time.
 
-    Summary of approach:
+Summary of approach:
 
 Multiple stages make up the proposed methodology which starts with collecting data then processing it before moving onto feature engineering for model training. Prior 
 to model input the dataset needs cleansing and normalization and data transformation to achieve optimal evaluation conditions for machine learning models. A performance
@@ -63,9 +77,9 @@ class imbalance. The final step includes executing hyperparameter tuning and mod
 investigation seeks to enhance the security and reliability of online payment systems through state-of-the-art machine learning methodology assessment and optimization
 in the field of fraud detection.
 
-    METHODS
+ METHODS
 
-    Data Acquisition and Sources
+ Data Acquisition and Sources
 
 The dataset used in this project is obtained from kaggle source containing detailed records of online payment transactions. A record database arranges financial
 transaction data with various elements that involve transaction types alongside sender and receiver account balances and fraud labels. Real transaction patterns 
@@ -89,7 +103,7 @@ oldbalanceDest	Balance of the account of receiver before transaction
 newbalanceDest	Balance of the account of receiver after transaction
 isFraud	The value to be predicted i.e. 0 or 1
 
-      Mathematical or Statistical Models
+ Mathematical or Statistical Models
 
 Multiple machine learning algorithms get deployed for building an effective fraud detection system while undergoing assessment. The initial algorithm choice used 
 Logistic Regression to establish a baseline classification method and calculate the weight of individual variables in fraud prediction. Random Forest receives selection
@@ -99,7 +113,7 @@ with Artificial Neural Networks are investigated for detecting fraud because the
 The selected models fit best for classification purposes because fraud identification demands precise detection and high recall performance. This situation calls for 
 models that focus on learning from rare instances of the minority class while avoiding prejudice toward dominant groups.
 
-      Experimental Design or Analytical Procedures
+Experimental Design or Analytical Procedures
       
 A machine learning pipeline requires structured development process to create fraud detection models of high accuracy and reliability. To commence the analysis the 
 available dataset receives partitioning into three components consisting of training data (70%), validation (15%) and test (15%). Models receive the training set content
@@ -144,7 +158,7 @@ The model functions practically in real-life implementation because it operates 
 
 
 
-   RESULTS
+RESULTS
 
 1. Presentation of Data
    
