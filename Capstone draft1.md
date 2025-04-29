@@ -1,12 +1,23 @@
-                                                      UNIVERSITY OF WEST FLORIDA
 
-                                                           CAPSTONE PROJECT
+                                       
+                                                 
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       UNIVERSITY OF WEST FLORIDA
 
-                                                               IDC6940
+                                            CAPSTONE PROJECT
 
-                                                             AJAY MASADI
+                                                 IDC6940
 
-                                      TITLE:ONLINE PAYMENT FRAUD DETECTION USING MACHINE LEARNING
+                                                AJAY MASADI
+
+                              TITLE:ONLINE PAYMENT FRAUD DETECTION USING MACHINE LEARNING
 
 
 
@@ -34,7 +45,7 @@
                             
                             
                             
-        INTRODUCTION
+    INTRODUCTION
   
   Problem Definition:
   
